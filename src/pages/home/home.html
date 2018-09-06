@@ -1,14 +1,43 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-toolbar color="carrot">
+        <!-- Botao esquerda (abre menu) -->
+        <button ion-button menuToggle left>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+
+        <ion-title>
+            Estatísticas
+        </ion-title>
+
+        <!-- Botao direita -->
+        <ion-buttons end>
+            <button ion-button icon-only (click)="sair()">
+                <ion-icon name="log-out"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+    <!-- Grafico 1 -->
+    <ion-card>
+        <ion-card-header>
+            Vendas por unidade
+        </ion-card-header>
+        <ion-card-content>
+            <canvas #graficoCanvas1></canvas>
+        </ion-card-content>
+    </ion-card>
+
+    <!-- Grafico 2 -->
+    <ion-card>
+        <ion-card-header>
+            Meta de vendas
+        </ion-card-header>
+        <ion-card-content>
+            <canvas class="hack" #graficoCanvas2></canvas>
+        </ion-card-content>
+    </ion-card>
+
 </ion-content>

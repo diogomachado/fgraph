@@ -6,20 +6,40 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { MetaPage } from '../pages/meta/meta';
+import { LoginPage } from '../pages/login/login';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+var config = {
+    apiKey: "AIzaSyCToqHLrDs3lgMeHJbF8qOtxwILucDGQ7Y",
+    authDomain: "fgraph-26dee.firebaseapp.com",
+    databaseURL: "https://fgraph-26dee.firebaseio.com",
+    projectId: "fgraph-26dee",
+    storageBucket: "fgraph-26dee.appspot.com",
+    messagingSenderId: "145277185321"
+};
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MetaPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(config),
+    AngularFireDatabaseModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MetaPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

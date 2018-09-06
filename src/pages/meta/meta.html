@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Meta</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-header>
+            Meta de ganhos: RS {{ metaEstipulada }}
+        </ion-card-header>
+        <ion-card-content>
+            Essa é a meta que você deseja que uma de suas filiais atinja
+        </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+        <ion-range min="300" max="10000" [(ngModel)]="metaEstipulada"></ion-range>
+    </ion-item>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <button ion-button full (click)="confirmarMeta()">Confirmar meta</button>
+    </ion-toolbar>
+</ion-footer>
