@@ -9,8 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { MetaPage } from '../pages/meta/meta';
 import { LoginPage } from '../pages/login/login';
 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 var config = {
     apiKey: "AIzaSyCToqHLrDs3lgMeHJbF8qOtxwILucDGQ7Y",

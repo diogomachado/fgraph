@@ -1,9 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs/Observable';
-import { AngularFireList } from 'angularfire2/database/interfaces';
+import { AngularFireList } from '@angular/fire/database/interfaces';
 import { ToastController } from 'ionic-angular/components/toast/toast-controller';
 import { Chart } from 'chart.js';
 

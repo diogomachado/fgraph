@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { ViewController, IonicPage, NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
 
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs/Observable';
-import { AngularFireList, AngularFireObject } from 'angularfire2/database/interfaces';
+import { AngularFireList, AngularFireObject } from '@angular/fire/database/interfaces';
 
 @IonicPage()
 @Component({
